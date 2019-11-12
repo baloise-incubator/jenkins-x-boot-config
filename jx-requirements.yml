@@ -32,7 +32,7 @@ environments:
       production: false
   key: staging
 - ingress:
-    domain: ""apps.baloise.dev""
+    domain: "apps.baloise.dev"
     externalDNS: false
     namespaceSubDomain: ""
     tls:
@@ -42,7 +42,7 @@ environments:
   key: production
 gitops: true
 ingress:
-  domain: ""
+  domain: "apps.baloise.dev"
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
