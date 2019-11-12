@@ -14,30 +14,30 @@ cluster:
   registry: docker-registry.default.svc:5000
 environments:
 - ingress:
-    domain: 172.29.110.190.nip.io
+    domain: apps.baloise.dev
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""
-      enabled: false
+      enabled: true
       production: false
   key: dev
 - ingress:
-    domain: ""
+    domain: "apps.baloise.dev"
     externalDNS: false
     namespaceSubDomain: ""
     tls:
       email: ""
-      enabled: false
+      enabled: true
       production: false
   key: staging
 - ingress:
-    domain: ""
+    domain: ""apps.baloise.dev""
     externalDNS: false
     namespaceSubDomain: ""
     tls:
       email: ""
-      enabled: false
+      enabled: true
       production: false
   key: production
 gitops: true
@@ -47,7 +47,7 @@ ingress:
   namespaceSubDomain: -jx.
   tls:
     email: ""
-    enabled: false
+    enabled: true
     production: false
 kaniko: true
 repository: nexus
