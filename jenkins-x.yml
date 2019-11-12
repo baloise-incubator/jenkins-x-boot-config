@@ -189,7 +189,6 @@ pipelineConfig:
             - --remote
             - --name
             - jenkins-x
-            - --provider-values-dir=../kubeProviders
             command: jx
             dir: /workspace/source/env
             name: install-jenkins-x
