@@ -13,36 +13,36 @@ cluster:
   provider: openshift
   registry: docker-registry.default.svc:5000
 environments:
-  - ingress:
-      domain: 172.29.110.190.nip.io
-      externalDNS: false
-      namespaceSubDomain: -jx.
-      tls:
-        email: ""
-        enabled: false
-        production: false
-    key: dev
-  - ingress:
-      domain: ""
-      externalDNS: false
-      namespaceSubDomain: ""
-      tls:
-        email: ""
-        enabled: false
-        production: false
-    key: staging
-  - ingress:
-      domain: ""
-      externalDNS: false
-      namespaceSubDomain: ""
-      tls:
-        email: ""
-        enabled: false
-        production: false
-    key: production
+- ingress:
+    domain: 172.29.110.190.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
 gitops: true
 ingress:
-  domain: 172.29.110.190.nip.io
+  domain: ""
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -68,6 +68,6 @@ storage:
 vault: {}
 velero: {}
 versionStream:
-  ref: master
+  ref: v1.0.201
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
